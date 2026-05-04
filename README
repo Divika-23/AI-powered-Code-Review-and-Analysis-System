@@ -1,0 +1,92 @@
+# 🤖 AI Code Reviewer
+
+## 📖 Overview
+AI Code Reviewer is a web-based tool that helps developers analyze and improve their code quality.  
+It combines static code analysis techniques with a large language model to provide meaningful feedback, detect issues, and suggest improvements.
+
+The system focuses on Python code and aims to make debugging, refactoring, and learning more efficient.
+
+---
+
+## 🚀 Features
+- 🔍 **Code Analysis** – Parses and understands Python code structure  
+- 🐛 **Error Detection** – Identifies syntax issues and potential runtime problems  
+- 🎨 **Style Checking** – Evaluates code readability and best practices  
+- 🤖 **AI Suggestions** – Provides improvements and refactoring ideas using an LLM  
+- 🌳 **Code Structure Insight** – Displays parsed structure for deeper understanding  
+
+---
+
+## 🛠 Tech Stack
+- **Language:** Python  
+- **Framework:** Streamlit  
+- **AI Integration:** Hugging Face Inference API  
+- **Code Analysis:** AST, Pylint  
+- **Version Control:** Git & GitHub  
+
+---
+
+## 📂 Project Structure
+AI-Code-Reviewer
+│── app.py
+│── ai_suggester.py
+│── code_parser.py
+│── error_detector.py
+│── style_checker.py
+│── requirements.txt
+
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1. Clone Repository
+git clone https://github.com/Divika-23/AI-powered-Code-Review-and-Analysis-System.git
+
+cd AI-powered-Code-Review-and-Analysis-System
+
+2. Create Virtual Environment
+
+python -m venv venv
+venv\Scripts\activate # Windows
+
+
+### 3. Install Dependencies
+
+pip install -r requirements.txt
+
+
+### 4. Configure API Key
+Create a file:
+
+.streamlit/secrets.toml
+
+
+Add your key:
+
+HUGGINGFACE_ACCESS_TOKEN = "your_token_here"
+
+
+### 5. Run the Application
+
+streamlit run app.py
+
+
+---
+
+## 🖥 Usage
+1. Launch the application  
+2. Paste your Python code  
+3. Run the analysis  
+4. Review:
+   - Detected issues  
+   - Style feedback  
+   - AI-generated suggestions  
+
+---
+
+## 🔮 Future Improvements
+- Support for multiple programming languages  
+- Integration with GitHub pull requests  
+- Advanced security checks  
+- Saving user history  
